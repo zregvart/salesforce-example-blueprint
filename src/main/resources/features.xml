@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0" name="camel-example-transformer-blueprint">
+  <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+
+  <feature name="salesforce-example" version="${project.version}">
+    <feature version="${camel.version}">camel</feature>
+    <feature version="${camel.version}">camel-blueprint</feature>
+    <feature version="${camel.version}">camel-salesforce</feature>
+    <bundle>mvn:com.github.zregvart/example-salesforce/${project.version}</bundle>
+  </feature>
+
+</features>
